@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+
+var reek = require('../lib/reek');
+
+// reek.println('Welcome to reek system');
+
+reek.process();

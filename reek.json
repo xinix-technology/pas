@@ -1,0 +1,16 @@
+{
+    "profiles": {
+        "unknown": {
+            "directory": "vendor"
+        },
+        "php": {
+            "directory": "vendor"
+        },
+        "web": {
+            "directory": "www/vendor"
+        },
+        "node": {
+            "directory": "node_modules"
+        }
+    }
+}
