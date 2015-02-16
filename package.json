@@ -1,7 +1,7 @@
 {
   "name": "reek",
   "version": "0.1.0",
-  "description": "",
+  "description": "reek is another package management and automation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,13 @@
   "author": "Ganesha <reekoheek@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "semver": "^4.3.0"
+    "easy-table": "^0.3.0",
+    "github": "^0.2.3",
+    "minimist": "^1.1.0",
+    "request": "^2.53.0",
+    "rimraf": "^2.2.8",
+    "semver": "^4.3.0",
+    "tar": "^1.0.3",
+    "tmp": "0.0.24"
   }
 }
