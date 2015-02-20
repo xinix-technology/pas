@@ -1,8 +1,11 @@
 {
+    "profile": "unknown",
+    "name": "",
+    "version": "master",
+    "queriedVersion": "master",
+    "vendor": "",
+    "unit": "",
     "profiles": {
-        "unknown": {
-            "directory": "vendor"
-        },
         "php": {
             "directory": "vendor"
         },
@@ -11,6 +14,9 @@
         },
         "node": {
             "directory": "node_modules"
+        },
+        "unknown": {
+            "directory": "vendor"
         }
     }
 }

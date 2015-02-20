@@ -16,6 +16,7 @@
     "easy-table": "^0.3.0",
     "github": "^0.2.3",
     "minimist": "^1.1.0",
+    "promise": "^6.1.0",
     "request": "^2.53.0",
     "rimraf": "^2.2.8",
     "semver": "^4.3.0",
