@@ -1,22 +1,16 @@
 {
-    "profile": "unknown",
-    "name": "",
-    "version": "master",
-    "queriedVersion": "master",
-    "vendor": "",
-    "unit": "",
     "profiles": {
         "php": {
-            "directory": "vendor"
+            "vendorDirectory": "vendor"
         },
         "web": {
-            "directory": "www/vendor"
+            "vendorDirectory": "www/vendor"
         },
         "node": {
-            "directory": "node_modules"
+            "vendorDirectory": "node_modules"
         },
-        "unknown": {
-            "directory": "vendor"
+        "": {
+            "vendorDirectory": "vendor"
         }
     }
 }

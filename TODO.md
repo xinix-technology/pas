@@ -9,8 +9,11 @@ TODO
 - [x] install no param
 - [x] update
 - [x] uninstall
-- [ ] init
+- [x] init
+- [x] manage deep deps on install
+- [ ] write autoload for php
+- [ ] task: deps show dependencies
+- [ ] 
 - [ ] invalidate indices cache every 5 min 
 - [ ] cache lifetime in config
 - [ ] use cache on dev version (master)
-- [ ] manage deep deps on install
