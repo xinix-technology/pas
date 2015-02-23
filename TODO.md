@@ -13,11 +13,11 @@ TODO
 - [x] manage deep deps on install
 - [x] task: deps show dependencies
 - [x] write autoload for php
+- [x] avoid reinstall the same dep
+- [x] use async to install deps
 - [ ] task: reindex - reindex provider index
 - [ ] remove vX.X.X prefix v from version
-- [ ] avoid reinstall the same dep
 - [ ] resolve reinstall dep by comparing version
-- [ ] use async to install deps
 - [ ] invalidate indices cache every 5 min 
 - [ ] cache lifetime in config
 - [ ] use cache on dev version (master)
