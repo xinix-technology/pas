@@ -1,5 +1,5 @@
-PAX
-===
+pas - another package management and automation
+===============================================
 
 [![License](http://img.shields.io/npm/l/pas.svg?style=flat-square)](https://github.com/xinix-technology/pax/blob/master/LICENSE)
 [![Download](http://img.shields.io/npm/dm/pas.svg?style=flat-square)](https://github.com/xinix-technology/pax)
