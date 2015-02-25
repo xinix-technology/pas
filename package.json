@@ -2,7 +2,10 @@
   "name": "pas",
   "version": "2.0.0",
   "description": "pas is another package management and automation",
-  "main": "index.js",
+  "bin": {
+    "pas": "bin/pas"
+  },
+  "main": "lib/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +13,17 @@
     "type": "git",
     "url": "https://github.com/xinix-technology/pas.git"
   },
-  "author": "Ganesha <reekoheek@gmail.com>",
+  "author": {
+    "name": "Ganesha",
+    "email": "reekoheek@gmail.com>"
+  },
   "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/xinix-technology/pas/blob/master/LICENSE"
+    }
+  ],
   "dependencies": {
     "easy-table": "^0.3.0",
     "github": "^0.2.3",
