@@ -15,6 +15,8 @@ TODO
 - [x] write autoload for php
 - [x] avoid reinstall the same dep
 - [x] use async to install deps
+- [ ] task: search
+- [ ] plain git provider
 - [ ] task: reindex - reindex provider index
 - [ ] remove vX.X.X prefix v from version
 - [ ] resolve reinstall dep by comparing version
