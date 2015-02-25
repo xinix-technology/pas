@@ -1,14 +1,14 @@
 {
-  "name": "reek",
-  "version": "0.1.0",
-  "description": "reek is another package management and automation",
+  "name": "pas",
+  "version": "2.0.0",
+  "description": "pas is another package management and automation",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reekoheek/reek.git"
+    "url": "https://github.com/xinix-technology/pas.git"
   },
   "author": "Ganesha <reekoheek@gmail.com>",
   "license": "MIT",
