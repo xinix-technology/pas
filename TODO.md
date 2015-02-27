@@ -1,6 +1,7 @@
 TODO
 ====
 
+You should use this only if you cant access the project issue page https://github.com/xinix-technology/pas/issues
 
 - [x] link task (consume)
 - [x] unlink
@@ -16,10 +17,11 @@ TODO
 - [x] avoid reinstall the same dep
 - [x] use async to install deps
 - [ ] task: search
+- [ ] bug: help task should be faster and snappy
 - [ ] plain git provider
 - [ ] task: reindex - reindex provider index
 - [ ] remove vX.X.X prefix v from version
 - [ ] resolve reinstall dep by comparing version
 - [ ] invalidate indices cache every 5 min 
 - [ ] cache lifetime in config
-- [ ] use cache on dev version (master)
+-
