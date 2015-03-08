@@ -5,25 +5,54 @@ pas - another package management and automation
 [![Download](http://img.shields.io/npm/dm/pas.svg?style=flat-square)](https://github.com/xinix-technology/pas)
 [![NPM](http://img.shields.io/npm/v/pas.svg?style=flat-square)](https://github.com/xinix-technology/pas)
 
-"pas" adalah sebuah Aplikasi package automation control. Tujuannya adalah untuk memberikan kemudahan kepada developer untuk mengatur siklus kerja dari aplikasi yang dibangunnya.
+The main goal of "pas" is to make sure application developers life easier. There are many tools outside there, generators, build tools, automation tools, and package management. Many of them are interoperable to each others. But using too many tools on your belt for developing application is not easy. Not for my friends I've known. 
 
-pas secara umum saat ini digunakan secara internal pada PT Sagara Xinix Solusitama untuk membantu dalam pengembangan piranti lunak dan sistem baik untuk bahasa pemrograman PHP maupun Javascript.
+If you working with javascript client side, node.js, php, or other platform. You will see each of them have their own thing to accomplished their job. Bower for client side javascript, npm for node.js, composer for php, maven for java, you named it! Unfortunately for many of us have to deal with more than one kind. You will not be web developer if you don't do javascript and php or other server side programming. Sometimes my colleagues get confused and tend to afraid to use another new tools.
 
-Dengan menggunakan pas, mempermudah pekerjaan seperti ini:
+"pas" is (another) package management and automation. We use it regularly at our organization, Xinix Technology. The aim of this tool is to help developers to manage their work cycle of applications that they build.
+
+Todays, developers can use "pas" to help them at php. But in a very short time we can expect that it will be usable for many platform and programming languages. Nowadays we used "pas" internally as an alternative of composer on php developments.
+
+Todays, Several tasks that will be easier by using "pas" are:
+
+- Project initialization with plain archetype from github
+- Project initialization from your earlier works.
+- One command call to manage library dependencies for php (replacing composer).
+
+## How to Install
+
+You need node.js to install "pas". If you already have node.js and npm in your system, execute:
+
+```
+npm install -g pas
+```
+
+As it will be installing "pas" globally, you might have to execute as root or using sudo.
+
+## How to Init New Project
+
+Archetype is a scaffolding concept to use your earlier work or single package as your base project.  
+
+```
+pas init [archetype-name] [directory-name]
+```
+
+example,
+
+```
+pas init reekoheek/bono-arch a-new-web-app
+```
+
+
+
+------------------------------------
+// scrap from earlier version, pax
 
 - Inisialisasi proyek dengan menggunakan archetype yang telah ada
 - Inisialisasi proyek dengan menggunakan proyek lain sebagai archetype
 - Satu perintah untuk mengatur ketergantungan pustaka baik itu PHP (composer) maupun Javascript (bower atau npm).
 - Menjalankan server development secara internal.
 - Mengatur script untuk melakukan migrasi antar versi
-
-## Instalasi
-
-pas di-install secara global untuk menambahkan perintah baru pada terminal / command-line anda. pas dibangun di atas teknologi node.js sehingga anda harus menginstall node.js terlebih dahulu hingga anda dapat menggunakan npm yang dibutuhkan untuk melakukan instalasi.
-
-```bash
-npm install -g pas
-```
 
 ## Archetype
 
