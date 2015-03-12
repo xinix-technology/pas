@@ -1,6 +1,6 @@
 {
   "name": "pas",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "description": "pas is another package management and automation",
   "bin": {
     "pas": "bin/pas"
@@ -32,6 +32,7 @@
     "request": "^2.53.0",
     "rimraf": "^2.2.8",
     "semver": "^4.3.0",
+    "sprintf-js": "^1.0.2",
     "tar": "^1.0.3",
     "tmp": "0.0.24"
   }
