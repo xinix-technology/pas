@@ -1,6 +1,6 @@
 {
   "name": "pas",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "pas is another package management and automation",
   "bin": {
     "pas": "bin/pas"
