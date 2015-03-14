@@ -1,3 +1,10 @@
 {
-
+    "name": "xinix-technology/pas",
+    "version": "2.0.9",
+    "tasks": {
+        "nexe:configure": "./configure",
+        "nexe:build": "nexe -i ./gen/pas.js -o ./build/pas > /dev/null",
+        "nexe:run": ["./build/pas"],
+        "nexe:debug": ["lldb", "./build/pas"]
+    }
 }

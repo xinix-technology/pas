@@ -2,3 +2,6 @@
 
 /*.sublime-*
 /node_modules
+/gen
+/build
+/tmp
