@@ -11,10 +11,10 @@ cat > "$CMD_FILE" <<EOL
 global.APP_LIB_DIR = '$PWD/lib';
 
 // includes
-global.APP_INCLUDES = {
-    providers: [],
-    profiles: []
-};
+// global.APP_INCLUDES = {
+//     providers: [],
+//     profiles: []
+// };
 
 var PolyfillPromise = require('promise');
 if (global.Promise) {
@@ -29,15 +29,15 @@ if (global.Promise) {
 
 EOL
 
-echo "// include providers" >> "$CMD_FILE"
-ls lib/providers |  while read a; do
-    echo "APP_INCLUDES.providers.push('../lib/providers/${a%.*}');" >> "$CMD_FILE"
-done
+# echo "// include providers" >> "$CMD_FILE"
+# ls lib/providers |  while read a; do
+#     echo "APP_INCLUDES.providers.push('../lib/providers/${a%.*}');" >> "$CMD_FILE"
+# done
 
-echo "// include profiles" >> "$CMD_FILE"
-ls lib/profiles |  while read a; do
-    echo "APP_INCLUDES.profiles.push('../lib/profiles/${a%.*}');" >> "$CMD_FILE"
-done
+# echo "// include profiles" >> "$CMD_FILE"
+# ls lib/profiles |  while read a; do
+#     echo "APP_INCLUDES.profiles.push('../lib/profiles/${a%.*}');" >> "$CMD_FILE"
+# done
 
 cat >> "$CMD_FILE" <<EOL
 
@@ -51,12 +51,12 @@ EOL
 # done
 
 echo "    // providers" >> "$CMD_FILE"
-ls lib/providers |  while read a; do
+ls lib/providers 2> /dev/null |  while read a; do
     echo "    require('../lib/providers/${a%.*}');" >> "$CMD_FILE"
 done
 
 echo "    // profiles" >> "$CMD_FILE"
-ls lib/profiles |  while read a; do
+ls lib/profiles 2> /dev/null |  while read a; do
     echo "    require('../lib/profiles/${a%.*}');" >> "$CMD_FILE"
 done
 
