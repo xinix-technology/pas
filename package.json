@@ -1,6 +1,6 @@
 {
   "name": "pas",
-  "version": "2.0.12",
+  "version": "2.1.0",
   "description": "pas is another package management and automation",
   "bin": {
     "pas": "bin/pas"
@@ -25,6 +25,7 @@
     }
   ],
   "dependencies": {
+    "co": "^4.5.1",
     "easy-table": "^0.3.0",
     "github": "^0.2.3",
     "minimist": "^1.1.0",
