@@ -46,4 +46,4 @@ example,
 pas init reekoheek/bono-arch a-new-web-app
 ```
 
-You can read documentations from http://img.shields.io/npm/v/pas.svg?style=flat-square
+You can read documentations from https://github.com/reekoheek/pas/blob/master/docs/index.md
