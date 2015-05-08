@@ -2,4 +2,4 @@
 
 ## Tasks: 
 
-- [init](http://localhost/)
+- [init](./tasks/init.md)
