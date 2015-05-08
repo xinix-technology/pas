@@ -46,4 +46,4 @@ example,
 pas init reekoheek/bono-arch a-new-web-app
 ```
 
-You can read documentations from https://github.com/reekoheek/pas/blob/master/docs/index.md
+You can read documentations from [Documentation](https://github.com/xinix-technology/pas/blob/master/docs/index.md)
