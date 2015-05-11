@@ -27,6 +27,7 @@
   "dependencies": {
     "easy-table": "^0.3.0",
     "github": "^0.2.3",
+    "inflection": "^1.7.1",
     "minimist": "^1.1.0",
     "promise": "^6.1.0",
     "request": "^2.53.0",
