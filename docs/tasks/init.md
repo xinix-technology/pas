@@ -1,7 +1,7 @@
 # pas init
 
 ```
-pas init [<ARCHETYPE_URL> <DESTINATION_DIR>] [OPTIONS...] 
+pas init [OPTIONS...] [<ARCHETYPE_URL> <DESTINATION_DIR>] 
 ```
 
 This following options are available
