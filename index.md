@@ -45,4 +45,4 @@ example,
 pas init reekoheek/bono-arch a-new-web-app
 ```
 
-You can read further from <a href="https://github.com/xinix-technology/pas/blob/master/docs/index.md">documentation</a>.
+You can read further from <a href="docs/index.html">documentation</a>.

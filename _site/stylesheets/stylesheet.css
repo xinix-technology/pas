@@ -31,7 +31,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	/*list-style: none;*/
 }
 blockquote, q {
 	quotes: none;
@@ -194,6 +194,7 @@ pre code {
 
 ul, ol, dl {
   margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 
@@ -295,9 +296,9 @@ blockquote {
 }
 
 ul li {
-  list-style-position: inside;
-  list-style: disc;
-  padding-left: 20px;
+  /*list-style-position: inside;*/
+  /*list-style: disc;*/
+  /*padding-left: 20px;*/
 }
 
 ol li {

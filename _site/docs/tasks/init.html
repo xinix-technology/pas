@@ -4,13 +4,13 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>PAS - "Xinix Technology Way" Package Management</title>
+    <title>PAS - Documentation</title>
   </head>
 
   <body>
@@ -19,19 +19,26 @@
 
         <header>
           <h1>PAS</h1>
-          <h2>"Xinix Technology Way" Package Management</h2>
+          <h2>pas init</h2>
         </header>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/xinix-technology/pas/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/xinix-technology/pas/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/xinix-technology/pas" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        <section class="clearfix">
+          <a href="/docs/index.html"><span>^ Top</span></a>
         </section>
 
         <hr>
 
         <section id="main_content">
-          {{content}}
+          <div class="highlight"><pre><code class="language-text" data-lang="text">pas init [OPTIONS...] [&lt;ARCHETYPE_URL&gt; &lt;DESTINATION_DIR&gt;] 
+</code></pre></div>
+<p>This following options are available</p>
+
+<p><code>-n &lt;NAME&gt;</code> Define name</p>
+
+<p><code>-v &lt;VERSION&gt;</code> Define version</p>
+
+<p><code>-p &lt;PROFILE&gt;</code> Define profile</p>
+
         </section>
 
         <footer>
