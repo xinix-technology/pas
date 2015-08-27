@@ -6,3 +6,5 @@ You should use this only if you can't access the project issue page https://gith
 - [x] ADDED BELOW
 - [ ] http and file provider should be merged as archive provider
 - [ ] inspect and retrofit the flow of install and init
+- [ ] notif update jika ada versi baru
+- [ ] PAS_OFFLINE=1 not hitting network

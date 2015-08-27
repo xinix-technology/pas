@@ -25,6 +25,7 @@
     }
   ],
   "dependencies": {
+    "colors": "^1.1.2",
     "delegates": "^0.1.0",
     "github": "^0.2.3",
     "inflection": "^1.7.1",
