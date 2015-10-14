@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
 var argv = require('minimist')(process.argv),
-    id = argv._[2],
-    args = argv._.slice(3),
-    options = argv;
+  id = argv._[2],
+  args = argv._.slice(3),
+  options = argv;
 
 delete options._;
 
 var app = require('../lib/app')('pas', id)
-    .arg(args)
-    .option(argv)
-    .run();
+  .arg(args)
+  .option(argv)
+  .run();
