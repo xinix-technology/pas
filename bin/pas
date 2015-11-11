@@ -1,13 +1,38 @@
 #!/usr/bin/env node
 
-var argv = require('minimist')(process.argv),
-  id = argv._[2],
-  args = argv._.slice(3),
-  options = argv;
+'use strict';
 
-delete options._;
+const _ = require('lodash');
+const argv = require('minimist')(process.argv.slice(2));
+const opts = _.pick(argv, (value, key) => key !== '_');
+const id = argv._[0];
+const args = argv._.slice(1);
+const bundle = require('../lib/bundle');
+const cfg = require('../lib/config')();
+const co = require('co');
+const colors = require('colors');
 
-var app = require('../lib/app')('pas', id)
-  .arg(args)
-  .option(argv)
-  .run();
+colors.setTheme({
+  silly: 'rainbow',
+  input: 'grey',
+  verbose: 'cyan',
+  prompt: 'grey',
+  info: 'green',
+  data: 'grey',
+  help: 'cyan',
+  warn: 'yellow',
+  debug: 'blue',
+  error: 'red'
+});
+
+co(function *() {
+  try {
+    yield bundle(cfg)
+      .args(args)
+      .opts(opts)
+      .run(id);
+    console.log('');
+  } catch(e) {
+    console.error('*** %s\nPlease report this to maintainer\n%s'.red, e.message, e.stack);
+  }
+});
