@@ -8,7 +8,7 @@ describe('parallel', function() {
 
   it('should run asynchronously', function(done) {
     var values = [];
-    parallel({
+    parallel('foo', {
         foo: function() {
           return new Promise(function(resolve, reject) {
             setTimeout(function() {

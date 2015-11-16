@@ -1,7 +1,8 @@
 # pas config
 
+Usage:
 ```
-pas config [OPTIONS...] [<KEY>] [<VALUE>] 
+pas config [<options...>] [<key> [<value>]]
 ```
 
 ## Terms

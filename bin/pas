@@ -7,32 +7,45 @@ const argv = require('minimist')(process.argv.slice(2));
 const opts = _.pick(argv, (value, key) => key !== '_');
 const id = argv._[0];
 const args = argv._.slice(1);
-const bundle = require('../lib/bundle');
-const cfg = require('../lib/config')();
+const context = require('../lib/context');
 const co = require('co');
 const colors = require('colors');
-
-colors.setTheme({
-  silly: 'rainbow',
-  input: 'grey',
-  verbose: 'cyan',
-  prompt: 'grey',
-  info: 'green',
-  data: 'grey',
-  help: 'cyan',
-  warn: 'yellow',
-  debug: 'blue',
-  error: 'red'
-});
+const sprintf = require('sprintf-js').sprintf;
 
 co(function *() {
+  colors.setTheme({
+    silly: 'rainbow',
+    input: 'grey',
+    verbose: 'cyan',
+    prompt: 'grey',
+    info: 'green',
+    data: 'grey',
+    help: 'cyan',
+    warn: 'yellow',
+    debug: 'blue',
+    error: 'red'
+  });
+
   try {
-    yield bundle(cfg)
+    yield context(yield require('../lib/config')())
       .args(args)
       .opts(opts)
       .run(id);
-    console.log('');
   } catch(e) {
-    console.error('*** %s\nPlease report this to maintainer\n%s'.red, e.message, e.stack);
+    if (e.name === 'HaltError') {
+      console.error('* %s\n'.red, e.message);
+    } else {
+      console.error('*** %s\nPlease report this to maintainer\n%s\n'.red, e.message, e.stack);
+    }
+  }
+
+  if (process.env.PAS_DEBUG) {
+    var memUsage = process.memoryUsage();
+    console.log('');
+    console.log('Memory Usage');
+    console.log(sprintf('  rss        %10.3f mb', memUsage.rss / 1024 / 1024));
+    console.log(sprintf('  heap total %10.3f mb', memUsage.heapTotal / 1024 / 1024));
+    console.log(sprintf('  heap used  %10.3f mb', memUsage.heapUsed / 1024 / 1024));
+    console.log('');
   }
 });

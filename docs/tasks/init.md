@@ -1,13 +1,12 @@
 # pas init
 
+Usage:
 ```
-pas init [OPTIONS...] [<ARCHETYPE_URL> <DESTINATION_DIR>] 
+pas init [<options...>] [<archetype_url> [<destination_dir>]] 
 ```
 
 This following options are available
 
-`-n <NAME>` Define name
-
-`-v <VERSION>` Define version
-
-`-p <PROFILE>` Define profile
+> `-n, --name <name>`         Define name
+> `-v, --version <version>`   Define version
+> `-p, --profile <profile>`   Define profile
